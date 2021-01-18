@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "front": "cd .. && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"nodemon server.js\" \"cd.. && yarn start\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
